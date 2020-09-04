@@ -1,7 +1,19 @@
 *{
     font-family: sans-serif;
 }
+.nav-link{
+    font-size: medium;
+}
 #heading{
     color: blue;
     text-align: center;
+}
+.landing h1{
+    color: blue;
+    text-align: center;
+}
+.carousel-caption{
+    font-size: medium;
+    color: gold;
+    opacity: 1.0;
 }
