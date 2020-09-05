@@ -17,30 +17,9 @@
     color: gold;
     opacity: 1.0;
 }
-.cr_account{
-    background-color: green;
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 20px;
-    padding-left: 60px;
-    min-height: fit-content;
-}
-.cr_account h2{
-    text-align: center;
-
-}
-.mk_order{
+.order{
+    font-size: x-large;
     background-image: url("../images/bg3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 20px;
-    padding-left: 60px;
-    padding-top: 10px;
-    min-height: fit-content;
-
-}
-.mk_order h2{
-    text-align: center;
 }
 .about{
     font-size: medium;
@@ -60,4 +39,8 @@ ul li{
     font-size: medium;
     font-style: italic;
 
+}
+.btn{
+    font-size: medium;
+    color: red;
 }

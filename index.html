@@ -129,96 +129,75 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-4 cr_account">
-                <h2>Create Account</h2>
-                <form action="">
+            <div class="col-xl-4 order">
+                <h2>Make An Order Here!!!!</h2>
+                <form action="" id="myForm" method="POST">
                     <div class="form-group">
-                        <label for="fname">First Name:</label><br>
-                        <input type="text" id="fname" name="first-name" placeholder="first name" value="" required><br>
-
-                    </div>
-                    <div class="form-group">
-                        <label for="lname">Last Name:</label><br>
-                        <input type="text" id="lname" name="last-name" placeholder="last name" value="" required><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="ID_NO">ID NO.:</label><br>
-                        <input type="number" id="ID_NO" name="ID_NO" placeholder="ID Number" value="" max="8" required><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="gender">Gender:</label><br>
-                        <input type="radio" id="male" name="gender" placeholder="male" value="male">
-                        <label for="male">Male</label><br>
-                        <input type="radio" id="female" name="gender" placeholder="female" value="female">
-                        <label for="female">Female</label><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number:</label><br>
-                        <input type="number" id="phone" name="phone" placeholder="phone number" value=""><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="location">Location:</label><br>
-                        <input type="text" id="location" name="location" placeholder="location" value="" required><br>
-                    </div>
-                    <div class="form-group">
-                        <input type="image" src="./images/submit1.png" name="submit" height="80px" width="60px">
-                    </div>
-                </form>
-            </div>
-            <div class="col-xl-4 mk_order">
-                <h2>Make An order</h2>
-                <form action="">
-                    <div class="form-group">
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" placeholder="name" value="" required><br>
+                        <label for="flavour">Slect your flavour:</label><br>
+                        <select name="flavours" id="flavours" class="custom-select">
+                            <option value="Pepperoni" selected>Pepperoni</option>
+                            <option value="Double cheese pizza">Double cheese pizza</option>
+                            <option value="Neapolitan Pizza">Neapolitan Pizza</option>
+                            <option value="California Style pizza">California Style</option>
+                            <option value="Hawaiian Pizza">Hawaiian Pizza</option>
+                        </select><br>
                     </div>
                     <div class="form-group">
                         <label for="size">Size:</label><br>
-                        <input type="text" id="size" name="size" placeholder="size" value="" required><br>
+                        <select name="size" id="size" class="custom-select">
+                            <option value="small--sh.250" selected>Small--sh.250</option>
+                            <option value="medium--sh.650">medium--sh.650</option>
+                            <option value="large--sh.1200">large--sh.1200</option>
+                        </select><br>
+                    </div>
+                    <div class="form-group">
+                        <label for="crust">choose your favourite crust:</label><br>
+                        <select name="crust" id="crust" class="custom-select">
+                            <option value="crispy--sh.150" selected>crispy--sh.150</option>
+                            <option value="stuffed--sh.300">stuffed--sh.300</option>
+                            <option value="glutten-free--sh.150">glutten-free--sh.150</option>
+                        
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="toppings">Choose your toppings:</label><br>
+                        <select name="toppings" id="toppings" class="custom-select">
+                            <option value="mushrooms--sh.100">mushrooms--sh.100</option>
+                            <option value="green peppers--sh.50">green peppers--sh.50</option>
+                            <option value="black olives--sh.100">black olives--sh.100</option>
+                            <option value="sausage--sh.sh.150">sausage--sh.sh.150</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                            <label class="custom-control-label" for="customCheck">Chicken pizza</label>
+                            
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                            <label class="custom-control-label" for="customCheck">Meat pizza</label>
+                            
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                            <label class="custom-control-label" for="customCheck">Buffalo pizza</label>
+                            
+                        </div>
+                    </div>
+                    <input type="submit" class="btn" value="submit">
 
-                    </div>
-                    <div class="form-group">
-                        <label for="crust">Kind of crust:</label><br>
-                        <input type="text" id="crust" name="crust" value="" placeholder="kind of crust" required><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="toppings">Toppings:</label><br>
-                        <input type="text" id="toppings" name="toppings" value="" placeholder="toppings" required><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number:</label><br>
-                        <input type="number" id="phone" name="phone" placeholder="phone number" value="" required><br>
-                    </div>
-                    <div class="form-group">
-                        <label for="location">Location:</label><br>
-                        <input type="text" name="location" id="location" value="" placeholder="location" required><br>
-                    </div>
-                    <div class="form-group">
-                        <input type="image" name="submit" src="./images/submit1.png" height="80px" width="60px">
-                    </div>
                 </form>
             </div>
-            <div class="col-xl-4 about">
-                <h2>About</h2>
-                <p>We make best pizza varieties for our customers.</p>
-                <p>We offer best pizza deliveries to our customers to their doorsteps. </p>
-                <h2>Contact</h2>
-                <address>
-                    <ul>
-                        <li>Email: collinskipkoech95@gmail.com</li>
-                        <li>Address: P.O. Box 0, Nairobi.</li>
-                        <li id="li3">Webiste:https://kipkoech-msojo.github.io/viewpoint-pizza-website/</li>
-                    </ul>
-                    
-                     
-                   
-                </address>
+            <div class="col-xl-4"></div>
+            <div class="col-xl-4"></div>
+            
             </div>
         </div>
     </div>
     <footer class="footer">
         <p>Viewpoint Pizza inn</p>
-        <p>2020</p>
+        <p>&copy;2020</p>
     </footer>
 
     
