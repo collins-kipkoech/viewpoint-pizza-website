@@ -1,23 +1,48 @@
-function User(first,last,id_no,phone,location){
-    this.firstname = first;
-    this.lastname = last;
-    this.id_no = id_no;
-    this.phone_number = phone;
-    this.location = location;
-};
+// Business logic
+console.log('HI')
+// form submission function
+function getSize() {
+  var size = document.getElementById("pizzaSize").value;
+  return parseInt(size);
+}
 
-$(document).ready(function() {
-    $("form#myForm").submit(function(event) {
-      event.preventDefault();
-  
-      var inputtedFirstName = $("input#fname").val();
-      var inputtedLastName = $("input#lname").val();
-      var inputtedIdNumber = $("input#id_no").val();
-      var inputtedPhoneNumber = $("input#phone").val();
-      var inputtedLocation = $("input#location").val();
-  
-      var newUser = new User(inputtedFirstName, inputtedLastName, inputtedIdNumber, inputtedPhoneNumber, inputtedLocation);
-  
-      
-    });
-  }); 
+function getCrust() {
+  var crust = document.getElementById("pizzaCrust").value;
+  return parseInt(crust);
+}
+
+function getTopping() {
+  var topping = document.getElementById("pizzaTopping").value;
+  return parseInt(topping);
+}
+
+function getCheese() {
+  var cheese = document.getElementById("pizzaCheese").value;
+  return parseInt(cheese);
+}
+
+function getQuantity() {
+  var number = document.getElementById("quantity").value;
+  return parseInt(number);
+}
+
+/* function to calculate the total amount */
+function totalAmount() {
+  var totals = (getSize() + getCrust() + getTopping() + getCheese()) * getQuantity();
+  alert(
+    "You have Ordered " +
+    getQuantity("") +
+    " pizza," + 
+    "" +
+    " amounting to ksh. " +
+    totals +
+    "" +
+    " Thanks for your order welcome again."
+  );
+
+  // variable to get the location of the customer
+  var location = prompt("If you want your pizza to be delivered to you please enter your location and if not cancel.");
+  if (location !== "") {
+    alert("You order will be delivered shortly.Delivery fee is 100/= and incase you didn,t want it delivered please come for your order.");
+  }
+}
