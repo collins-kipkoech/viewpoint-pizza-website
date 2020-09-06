@@ -1,5 +1,4 @@
-// Business logic
-console.log('HI')
+
 // form submission function
 function getSize() {
   var size = document.getElementById("pizzaSize").value;
@@ -30,19 +29,13 @@ function getQuantity() {
 function totalAmount() {
   var totals = (getSize() + getCrust() + getTopping() + getCheese()) * getQuantity();
   alert(
-    "You have Ordered " +
-    getQuantity("") +
-    " pizza," + 
-    "" +
-    " amounting to ksh. " +
-    totals +
-    "" +
+    "You have Ordered " + getQuantity("") + " pizza," + "" +" amounting to ksh. " + totals + "" +
     " Thanks for your order welcome again."
   );
 
   // variable to get the location of the customer
-  var location = prompt("If you want your pizza to be delivered to you please enter your location and if not cancel.");
+  var location = prompt("Do you want pizza to be delivered to your place?..Please enter your location.");
   if (location !== "") {
-    alert("You order will be delivered shortly.Delivery fee is 100/= and incase you didn,t want it delivered please come for your order.");
+    alert("You order will be delivered shortly.Delivery fee is 150/=");
   }
 }
