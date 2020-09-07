@@ -21,10 +21,15 @@
     font-size: x-large;
     background-image: url("../images/bg3.png");
 }
+.contact{
+    font-size: medium;
+    background-image: url(../images/logo3-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 .about{
     font-size: medium;
-    background-image: url(../images/logo3.jpeg);
-
 }
 ul li{
     list-style: none;

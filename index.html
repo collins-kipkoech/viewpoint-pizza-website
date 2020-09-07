@@ -26,10 +26,10 @@
                 <a class="nav-link" href="#heading">portfolio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="">About</a>
+                <a class="nav-link" href="#about">About</a>
             </li>
               
         </ul>
@@ -137,81 +137,85 @@
                         <form>
                             <div class="card">
                                 <div class="card-body">
-                                <!-- A form for the pizza size -->
-                                <div class="form-group">
-                                    <div id="size">
-                                        <label for="pizzaSize">Size</label>
-                                        <select class="browser-default custom-select" id="pizzaSize">
-                                            <option value="choose"></option>
-                                            <option label="Large - ksh 1500" value="1500"></option>
-                                            <option label="Medium -ksh 800" value="800"></option>
-                                            <option label="Small -ksh 500" value="500"></option>
-                                        </select>
+                                    <!-- A form for the pizza size -->
+                                    <div class="form-group">
+                                        <div id="size">
+                                            <label for="pizzaSize">Size</label>
+                                            <select class="browser-default custom-select" id="pizzaSize">
+                                                <option value="choose"></option>
+                                                <option label="Large - ksh 1500" value="1500"></option>
+                                                <option label="Medium -ksh 800" value="800"></option>
+                                                <option label="Small -ksh 500" value="500"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- A form for the pizza crust -->
+                                    <div class="form-group">
+                                        <div id="crust">
+                                            <label for="pizzaCrust">Crust</label>
+                                            <select class="browser-default custom-select" id="pizzaCrust">
+                                                <option label="choose"></option>
+                                                <option label="Thin crust -ksh 700" value="700"></option>
+                                                <option label="Thick crust -ksh 600" value="600"></option>
+                                                <option label="Deep crust -ksh 500" value="500"></option>
+                                                <option label="Cheese -ksh 450" value="450"></option>
+                                                <option label="Stuffed crust -ksh 400" value="400"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- A form for the pizza topping -->
+                                    <div class=" form-group">
+                                        <div id="toppings">
+                                            <label for="pizzaTopping">Toppings</label>
+                                            <select class="browser-default custom-select" id="pizzaTopping">
+                                                <option label="choose"></option>
+                                                <option label="Bacon -ksh.120" value="120"></option>
+                                                <option label="Beef -ksh.120" value="120"></option>
+                                                <option label="Sausages -ksh.100" value="100"></option>
+                                                <option label="Chicken -ksh.100" value="100"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <!-- A form for the number of pizza ordered -->
+                                    <div class="form-group">
+                                        <div id="number">
+                                            <label for="quantity">Quantity</label>
+                                            <input class="form-control" type="number" name="pizza" id="quantity" placeholder="0"
+                                                max="" min="0">
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- A form for the pizza crust -->
-                                <div class="form-group">
-                                    <div id="crust">
-                                        <label for="pizzaCrust">Crust</label>
-                                        <select class="browser-default custom-select" id="pizzaCrust">
-                                            <option label="choose"></option>
-                                            <option label="Thin crust -ksh 700" value="700"></option>
-                                            <option label="Thick crust -ksh 600" value="600"></option>
-                                            <option label="Deep crust -ksh 500" value="500"></option>
-                                            <option label="Cheese -ksh 450" value="450"></option>
-                                            <option label="Stuffed crust -ksh 400" value="400"></option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <!-- A form for the pizza topping -->
-                                <div class=" form-group">
-                                    <div id="toppings">
-                                        <label for="pizzaTopping">Toppings</label>
-                                        <select class="browser-default custom-select" id="pizzaTopping">
-                                            <option label="choose"></option>
-                                            <option label="Bacon -ksh.120" value="120"></option>
-                                            <option label="Beef -ksh.120" value="120"></option>
-                                            <option label="Sausages -ksh.100" value="100"></option>
-                                            <option label="Chicken -ksh.100" value="100"></option>
-                                        </select>
-                                    </div>
-                                </div>
-                                
-                                
-                                <!-- A form for the number of pizza ordered -->
-                                <div class="form-group">
-                                    <div id="number">
-                                        <label for="quantity">Quantity</label>
-                                        <input class="form-control" type="number" name="pizza" id="quantity" placeholder="0"
-                                            max="" min="0">
-                                    </div>
-                                </div>
+                                <br>
+                                <!-- A submit button to confirm the order -->
+                                <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2"
+                                    onclick="totalAmount();"><strong>Confirm order</strong>
+                                </button>
                             </div>
-                            <br>
-                            <!-- A submit button to confirm the order -->
-                            <button class="btn btn-success mx-auto d-block submit" type="submit" id="submit2"
-                                onclick="totalAmount();"><strong>Confirm order</strong>
-        
-                                </div>
-                            </div>
-                           
-                    </div>
-                    <!-- footer -->
-                    <div class="card-deck">
-                        <div class="card bg-success">
                             
-                        </div>
+                        </form>   
                     </div>
+                    
         
                 </div>
             
             
             </div>
-            <div class="col-xl-4">
-              <p>add code</p>
+            <div class="col-xl-4 about" id="about">
+                <h2>About US</h2>
+                <p>Viewpoint restaurant has been in operation since 2010. We offer best services on pizza production.
+                    Since operation, the online order has grown faster such that currently we handle 80 to 100 customers per 
+                    day.
+                </p>
             </div>
-            <div class="col-xl-4 about">
-              <p>add code</p>
+            <div class="col-xl-4 contact" id="contact">
+                <h2>Location</h2>
+                <p>Viewpoint</p>
+                <p>Naivasha Mall</p>
+                <h2>Contact</h2>
+                <p>Email: collinskipkoech95@gmail.com</p>
+                <p>Address: P.O. BOX 0, Nairobi.</p>
             </div>
 
             
