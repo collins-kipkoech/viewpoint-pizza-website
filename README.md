@@ -11,6 +11,22 @@ https://kipkoech-msojo.github.io/viewpoint-pizza-website/
 Figma Design Link
 https://www.figma.com/file/PaQSiwzLJJakOoIy33icV4/Pizza?node-id=1%3A24
 
+Screenshots
+
+landing page
+
+![landing-pizza](https://user-images.githubusercontent.com/68596898/92349966-45a4f300-f0e0-11ea-8e9e-69e28204a4f0.png)
+
+portfolio
+
+![pizza-portfolio](https://user-images.githubusercontent.com/68596898/92350101-9ae10480-f0e0-11ea-99f4-81c819612fc1.png)
+
+order form
+
+![order-pizza](https://user-images.githubusercontent.com/68596898/92350137-b51ae280-f0e0-11ea-81ea-74651316d00e.png)
+
+
+
 installation
 1. open termina ctrl+Alt+T
 2. git clone https://github.com/kipkoech-msojo/Delani-studio.git
