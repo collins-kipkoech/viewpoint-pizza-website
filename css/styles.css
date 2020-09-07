@@ -30,6 +30,10 @@
 }
 .about{
     font-size: medium;
+    background-image: url("../images/pizza9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 ul li{
     list-style: none;
