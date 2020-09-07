@@ -5,6 +5,9 @@ look for the best services offered. The customer orders the pizza online by fill
 Author
 Name: Collins Kipkoech
 
+Active link
+https://kipkoech-msojo.github.io/viewpoint-pizza-website/
+
 Figma Design Link
 https://www.figma.com/file/PaQSiwzLJJakOoIy33icV4/Pizza?node-id=1%3A24
 
@@ -13,6 +16,15 @@ installation
 2. git clone https://github.com/kipkoech-msojo/Delani-studio.git
 3. cd Delani-studio
 4. code . or atom .
+
+How to order pizza
+1. visit my website https://kipkoech-msojo.github.io/viewpoint-pizza-website/
+2. go to the order page
+3. select the size you want
+4. select the crust
+5. select the topping
+6. select the quantity
+7. submit your order
 
 Technologies
 1. HTML
